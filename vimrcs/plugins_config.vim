@@ -84,6 +84,15 @@ map <leader>nn :NERDTreeToggle<cr>
 map <leader>nb :NERDTreeFromBookmark 
 map <leader>nf :NERDTreeFind<cr>
 map <leader>nm :NERDTreeMirror<cr>
+map <leader>bb :Bookmark<cr>
+map <leader>bn :Bookmark 
+map <leader>br :BookmarkToRoot 
+"map <leader>bo :OpenBookmark 
+map <leader>bc :ClearBookmarks<cr> 
+"map <leader>bf :RevealBookmark 
+
+
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => vim-multiple-cursors
