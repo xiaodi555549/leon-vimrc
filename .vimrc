@@ -8,6 +8,9 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'minibufexpl.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'mattn/emmet-vim'
+Plugin 'vim-scripts/bash-support.vim'
 
 call vundle#end()
 filetype plugin indent on
