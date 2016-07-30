@@ -5,4 +5,4 @@ my vim pluginList:
 2. ctrlp
 3. bufferExplore
 4. YouCompleteMe
-
+5. Vundle
