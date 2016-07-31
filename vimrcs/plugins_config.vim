@@ -112,6 +112,7 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => vim-airline config (force color)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme="luna"
+let g:airline#extensions#tabline#enabled = 1
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -195,4 +196,43 @@ let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Vundle
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>pi :PluginInstall<cr>
+map <leader>pc :PluginClean<cr>
+map <leader>pu :PluginUpdate<cr>
+map <leader>pl :PluginList<cr>
+map <leader>ps :PluginSearch 
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => fugitive 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>gs :Gstatus<cr>
+map <leader>ga :Git add .<cr>
+map <leader>gb :Git checkout 
+map <leader>gc :Gcommit -m  
+map <leader>gr :Git reset<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => easy-motion 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Disable default mappings
+"let g:EasyMotion_do_mapping = 0 
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+"map <Leader> <Plug>(easymotion-prefix)
+
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => YcmCompleteMe 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+map <leader>jd :YcmCompleter GoToDefinition<cr>
+map <leader>jr :YcmCompleter GoToReferences<cr>
+
 

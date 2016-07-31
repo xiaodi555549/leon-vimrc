@@ -6,3 +6,5 @@ my vim pluginList:
 3. bufferExplore
 4. YouCompleteMe
 5. Vundle
+6. nerdCommenter
+7. fugitive

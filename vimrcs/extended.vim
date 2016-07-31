@@ -46,17 +46,18 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Fast editing and reloading of vimrc configs
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-map <leader>em :e! ~/.vim_runtime/my_configs.vim<cr>
-map <leader>ep :e! ~/.vim_runtime/vimrcs/plugins_config.vim<cr>
-map <leader>ee :e! ~/.vim_runtime/vimrcs/extended.vim<cr>
-map <leader>eb :e! ~/.vim_runtime/vimrcs/basic.vim<cr>
-map <leader>ef :e! ~/.vim_runtime/vimrcs/filetypes.vim<cr>
+map <leader>em :e! ~/.vim/my_configs.vim<cr>
+map <leader>ep :e! ~/.vim/vimrcs/plugins_config.vim<cr>
+map <leader>ee :e! ~/.vim/vimrcs/extended.vim<cr>
+map <leader>eb :e! ~/.vim/vimrcs/basic.vim<cr>
+map <leader>ef :e! ~/.vim/vimrcs/filetypes.vim<cr>
+map <leader>ev :e! ~/.vimrc<cr>
 
-autocmd! bufwritepost vimrc source ~/.vim_runtime/my_configs.vim
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrcs/plugin_config.vim
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrcs/extended.vim
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrcs/basic.vim
-autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrcs/filetypes.vim
+autocmd! bufwritepost vimrc source ~/.vim/my_configs.vim
+autocmd! bufwritepost vimrc source ~/.vim/vimrcs/plugin_config.vim
+autocmd! bufwritepost vimrc source ~/.vim/vimrcs/extended.vim
+autocmd! bufwritepost vimrc source ~/.vim/vimrcs/basic.vim
+autocmd! bufwritepost vimrc source ~/.vim/vimrcs/filetypes.vim
 
 
 
@@ -65,7 +66,7 @@ autocmd! bufwritepost vimrc source ~/.vim_runtime/vimrcs/filetypes.vim
 "    means that you can undo even when you close a buffer/VIM
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 try
-    set undodir=~/.vim_runtime/temp_dirs/undodir
+    set undodir=~/.vim/temp_dirs/undodir
     set undofile
 catch
 endtry
