@@ -1,0 +1,12 @@
+{
+    "libs":[
+        "jquery"
+    ],
+    "loadEagerly":[
+        
+    ],
+    "plugins":{
+        angular:{}
+
+    }
+}
