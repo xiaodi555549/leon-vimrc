@@ -25,7 +25,7 @@ map <leader>o :BufExplorer<cr>
 """"""""""""""""""""""""""""""
 " => MRU plugin
 """"""""""""""""""""""""""""""
-let MRU_Max_Entries = 50
+let MRU_Max_Entries = 20
 map <leader>f :MRU<CR>
 
 
@@ -220,12 +220,15 @@ map <leader>gr :Git reset<cr>
 " => easy-motion 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Disable default mappings
-"let g:EasyMotion_do_mapping = 0 
+let g:EasyMotion_do_mapping = 0 
 
 " Turn on case insensitive feature
 let g:EasyMotion_smartcase = 1
 
 "map <Leader> <Plug>(easymotion-prefix)
+map <leader>ms <Plug>(easymotion-overwin-f2)
+map <leader>mj <Plug>(easymotion-j)
+map <leader>mk <Plug>(easymotion-k)
 
 
 
@@ -234,5 +237,12 @@ let g:EasyMotion_smartcase = 1
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 map <leader>jd :YcmCompleter GoToDefinition<cr>
 map <leader>jr :YcmCompleter GoToReferences<cr>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Numbers 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:numbers_exclude = ['nerdtree', 'bufexplorer','mru']
+nnoremap <F3> :NumbersToggle<cr>
 
 

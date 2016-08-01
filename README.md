@@ -8,3 +8,5 @@ my vim pluginList:
 5. Vundle
 6. nerdCommenter
 7. fugitive
+8. numbers
+9. Ack

@@ -14,6 +14,8 @@ Plugin 'mattn/emmet-vim'
 "Plugin 'vim-airline/vim-airline'
 Plugin 'tpope/vim-fugitive'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'myusuf3/numbers.vim'
+Plugin 'mileszs/ack.vim' 
 
 call vundle#end()
 filetype plugin indent on
