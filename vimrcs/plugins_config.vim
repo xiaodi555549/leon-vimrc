@@ -18,7 +18,7 @@ call pathogen#helptags()
 let g:bufExplorerDefaultHelp=0
 let g:bufExplorerShowRelativePath=1
 let g:bufExplorerFindActive=1
-let g:bufExplorerSortBy='name'
+let g:bufExplorerSortBy='mru'  " Sort by file extension.
 map <leader>o :BufExplorer<cr>
 
 
@@ -112,7 +112,8 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 " => vim-airline config (force color)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:airline_theme="luna"
-let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 0
+let g:airline_powerline_fonts=0
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""

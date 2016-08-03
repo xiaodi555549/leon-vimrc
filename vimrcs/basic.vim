@@ -208,6 +208,7 @@ set wrap "Wrap lines
 
 set nu " set line number
 
+
 """"""""""""""""""""""""""""""
 " => Visual mode related
 """"""""""""""""""""""""""""""

@@ -16,6 +16,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'myusuf3/numbers.vim'
 Plugin 'mileszs/ack.vim' 
+Plugin 'pangloss/vim-javascript'
 
 call vundle#end()
 filetype plugin indent on
