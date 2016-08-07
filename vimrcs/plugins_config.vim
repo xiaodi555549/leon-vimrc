@@ -8,9 +8,9 @@
 """"""""""""""""""""""""""""""
 " => Load pathogen paths
 """"""""""""""""""""""""""""""
-call pathogen#infect('~/.vim_runtime/sources_forked/{}')
-call pathogen#infect('~/.vim_runtime/sources_non_forked/{}')
-call pathogen#helptags()
+" call pathogen#infect('~/.vim_runtime/sources_forked/{}')
+" call pathogen#infect('~/.vim_runtime/sources_non_forked/{}')
+" call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
@@ -62,8 +62,8 @@ let g:user_zen_mode='a'
 """"""""""""""""""""""""""""""
 " => snipMate (beside <TAB> support <CTRL-j>)
 """"""""""""""""""""""""""""""
-ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
-snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
+" ino <c-j> <c-r>=snipMate#TriggerSnippet()<cr>
+" snor <c-j> <esc>i<right><c-r>=snipMate#TriggerSnippet()<cr>
 
 
 """"""""""""""""""""""""""""""
@@ -173,6 +173,8 @@ let g:BASH_Company    = 'green'
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 let g:user_emment_mode='n'
 let g:user_emmet_leader_key=','
+let g:user_emmet_install_global=0
+autocmd FileType html,css EmmetInstall
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => nerdcommenter
@@ -243,7 +245,14 @@ map <leader>jr :YcmCompleter GoToReferences<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Numbers 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:numbers_exclude = ['nerdtree', 'bufexplorer','mru']
+let g:numbers_exclude = ['nerdtree', 'bufexplorer', 'mru']
 nnoremap <F3> :NumbersToggle<cr>
 
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => ultisnips 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:UltisnipsExpandTrigger="<F4>"
+let g:UltiSnipsJumpForwardTrigger="<c-j>"
+let g:UltiSnipsJumpBackwardTrigger="<c-k>"
+" map <leader>uu :UltiSnips#ExpandSnippet()<cr>
