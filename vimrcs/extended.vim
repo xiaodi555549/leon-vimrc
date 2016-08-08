@@ -38,8 +38,8 @@ if has("gui_running")
     set background=dark
     colorscheme peaksea
 else
-    colorscheme desert
-    let g:colors_name="desert"
+    colorscheme 256-grayvim
+    let g:colors_name="256-grayvim"
 endif
 
 
