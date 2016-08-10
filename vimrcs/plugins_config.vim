@@ -114,6 +114,7 @@ au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 let g:airline_theme="luna"
 let g:airline#extensions#tabline#enabled = 0
 let g:airline_powerline_fonts=0
+let g:airline#extensions#whitespace#checks = [ 'indent', 'long', 'mixed-indent-file' ]
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
