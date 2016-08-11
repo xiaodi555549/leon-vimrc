@@ -24,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 """""""""""""""""""""""""""""""""""""
 Plugin 'myusuf3/numbers.vim'
 Plugin 'pangloss/vim-javascript'
+Plugin 'scrooloose/syntastic'
 
 " code snippets 
 " Plugin 'SirVer/ultisnips'

@@ -289,3 +289,20 @@ let g:UltisnipsExpandTrigger="<F4>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " map <leader>uu :UltiSnips#ExpandSnippet()<cr>
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => syntastic 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set statusline+=%#warningmsg#
+set statusline+=%{SyntasticStatuslineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+
+" javascript checkers
+let g:syntastic_javascript_checkers = ['jshint'] 
+" json checkers
+let g:syntastic_json_checkers = ['jsonlint']
