@@ -74,6 +74,10 @@ nmap <leader>r :source ~/.vimrc<cr>
 " set no highlight 
 nmap <leader>nh :noh<cr>
 
+" Fast add a new line
+nmap oo o<esc>
+
+
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)
 "command W w !sudo tee % > /dev/null
