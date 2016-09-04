@@ -1,16 +1,8 @@
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Important: 
-"       This requries that you install https://github.com/amix/vimrc !
+" Plugin config:
+" modified from https://github.com/amix/vimrc !
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-
-
-""""""""""""""""""""""""""""""
-" => Load pathogen paths
-""""""""""""""""""""""""""""""
-" call pathogen#infect('~/.vim_runtime/sources_forked/{}')
-" call pathogen#infect('~/.vim_runtime/sources_non_forked/{}')
-" call pathogen#helptags()
 
 """"""""""""""""""""""""""""""
 " => bufExplorer plugin
@@ -104,8 +96,8 @@ let g:multi_cursor_next_key="\<C-s>"
 " => surround.vim config
 " Annotate strings with gettext http://amix.dk/blog/post/19678
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-vmap Si S(i_<esc>f)
-au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
+" vmap Si S(i_<esc>f)
+" au FileType mako vmap Si S"i${ _(<esc>2f"a) }<esc>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -156,36 +148,6 @@ let g:goyo_width=100
 let g:goyo_margin_top = 2
 let g:goyo_margin_bottom = 2
 nnoremap <silent> <leader>z :Goyo<cr>
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Vim-go
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:go_fmt_command = "goimports"
-
-
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Syntastic (syntax checker)
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" Python
-let g:syntastic_python_checkers=['pyflakes']
-
-" Javascript
-let g:syntastic_javascript_checkers = ['jshint']
-
-" Go
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_go_checkers = ['go', 'golint', 'errcheck']
-
-" Custom CoffeeScript SyntasticCheck
-func! SyntasticCheckCoffeescript()
-    let l:filename = substitute(expand("%:p"), '\(\w\+\)\.coffee', '.coffee.\1.js', '')
-    execute "tabedit " . l:filename
-    execute "SyntasticCheck"
-    execute "Errors"
-endfunc
-nnoremap <silent> <leader>l :call SyntasticCheckCoffeescript()<cr>
-
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Git gutter (Git diff)
@@ -262,10 +224,10 @@ let g:EasyMotion_do_mapping = 0
 let g:EasyMotion_smartcase = 1
 
 "map <Leader> <Plug>(easymotion-prefix)
+map <leader>mf <Plug>(easymotion-bd-f)
 map <leader>ms <Plug>(easymotion-overwin-f2)
-map <leader>mj <Plug>(easymotion-j)
-map <leader>mk <Plug>(easymotion-k)
-
+map <leader>ml <Plug>(easymotion-bd-jk)
+map <leader>mw <Plug>(easymotion-bd-w)
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -303,7 +265,7 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " javascript checkers
-let g:syntastic_javascript_checkers = ['jshint'] 
+let g:syntastic_javascript_checkers = ['eslint'] 
 " json checkers
 let g:syntastic_json_checkers = ['jsonlint']
 " css checkers
