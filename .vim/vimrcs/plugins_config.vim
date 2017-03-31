@@ -268,3 +268,5 @@ let g:syntastic_check_on_wq = 0
 let g:syntastic_javascript_checkers = ['eslint'] 
 " json checkers
 let g:syntastic_json_checkers = ['jsonlint']
+" css checkers
+let g:syntastic_css_checkers = ['csslint']
