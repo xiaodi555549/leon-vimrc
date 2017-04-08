@@ -1,5 +1,5 @@
 # 我的插件列表 
-1. nerdTree  
+1. nerdtree  
 2. ctrlp
 3. bufferExplore
 4. YouCompleteMe
@@ -8,6 +8,7 @@
 7. fugitive
 8. numbers
 9. Ack
+10. mru
 
 # 插件使用说明
 
@@ -15,7 +16,7 @@
 - 打开插件说明文档: :h pluginName
 
 
-## [MRU][1] 的使用 
+## [mru][1] 的使用 
 在最近使用过的文件中进行查找文件
 - 调用mru: ,f
 - 在当前编辑区打开选中文件: enter (回车键)
@@ -29,7 +30,7 @@
 - 使用trlp: ,j
 - 退出trlp: ESC键
 
-## nerdTree 的使用
+## [nerdtree][3] 的使用
 目录树的操作
 ### 光标在编辑区时
 - 打开或者隐藏目录树: ,nn
@@ -76,8 +77,16 @@
 - 添加或取消注释：,ci
 - 在本行末尾添加注释符号并进入插入模式：,cA
 
+## numbers 的使用
+- <F3> 在相对行号和绝对行号之间进行切换
+
 # vim 使用技巧
 1. 删除当前光标到行尾：D
+2. 向前重复查找：;
+3. 后退查找：,
+4. 重复修改：.
+
 
 [1]: https://github.com/vim-scripts/mru.vim  
 [2]: https://github.com/kien/ctrlp.vim 
+[3]:  
