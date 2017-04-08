@@ -64,11 +64,16 @@
 - 显示所有的标签列表:B
 - 显示影藏的文件：I
 
+## [numbers][4] 的使用
+- <F3> 在相对行号和绝对行号之间进行切换
 
+## [bufferExplore][5] 的使用
+显示buffer列表
+- 查看buffer列表：,o
+- 打开文件：o
+- 关闭buffer列表：q
 
-
-
-## nerdcomment 的使用
+## [nerdcomment][6] 的使用
 添加和取消注释
 - 添加单行注释：,cc
 - 添加多行注释：,cm
@@ -77,8 +82,6 @@
 - 添加或取消注释：,ci
 - 在本行末尾添加注释符号并进入插入模式：,cA
 
-## numbers 的使用
-- <F3> 在相对行号和绝对行号之间进行切换
 
 # vim 使用技巧
 1. 删除当前光标到行尾：D
@@ -89,4 +92,8 @@
 
 [1]: https://github.com/vim-scripts/mru.vim  
 [2]: https://github.com/kien/ctrlp.vim 
-[3]:  
+[3]: https://github.com/scrooloose/nerdtree
+[4]: https://github.com/myusuf3/numbers.vim
+[5]: https://github.com/jlanzarotta/bufexplorer
+[6]: https://github.com/scrooloose/nerdcommenter
+
