@@ -14,6 +14,12 @@
 
 ## 通用法则
 - 打开插件说明文档: :h pluginName
+- buffer切换：,l 下一个buffer，,h 上一个buffer
+- quickfix切换：,n 下一个错误处，,p 上一个错误处
+- 切换工作目录到当前buffer所在目录：,cd
+- 保存当前buffer：,w
+- 复制当前buffer到新tab页：,co
+
 
 
 ## [mru][1] 的使用 
@@ -88,6 +94,7 @@
 2. 向前重复查找：;
 3. 后退查找：,
 4. 重复修改：.
+ 
 
 
 [1]: https://github.com/vim-scripts/mru.vim  
