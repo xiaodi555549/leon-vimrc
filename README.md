@@ -74,9 +74,10 @@
 - &lt;F3&gt; 在相对行号和绝对行号之间进行切换
 
 ## [bufferExplore][5] 的使用
-显示buffer列表
+显示buffer列表, 需要vim7.4版本支持
 - 查看buffer列表：,o
 - 打开文件：o
+- 删除buffer：d
 - 关闭buffer列表：q
 
 ## [nerdcomment][6] 的使用
@@ -87,6 +88,9 @@
 - 添加注释前先复制文本：,cy
 - 添加或取消注释：,ci
 - 在本行末尾添加注释符号并进入插入模式：,cA
+
+## [Ultisnips][7] 的使用
+代码片段补全
 
 
 # vim 使用技巧
