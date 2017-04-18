@@ -89,7 +89,14 @@
 - 添加或取消注释：,ci
 - 在本行末尾添加注释符号并进入插入模式：,cA
 
-## [Ultisnips][7] 的使用
+## [emmet-vim][7] 的使用
+快速编写html以及css
+- 生成代码：,,
+- 注释html代码：,/
+- 删除html代码块：,k
+- 选中html代码块：,d 或者,D
+
+## [Ultisnips][8] 的使用
 代码片段补全
 
 
@@ -107,4 +114,4 @@
 [4]: https://github.com/myusuf3/numbers.vim
 [5]: https://github.com/jlanzarotta/bufexplorer
 [6]: https://github.com/scrooloose/nerdcommenter
-
+[7]: https://github.com/mattn/emmet-vim
