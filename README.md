@@ -104,9 +104,9 @@
 1. 删除当前光标到行尾：D
 2. 向前重复查找：;
 3. 后退查找：,
-4. 重复修改：.
+4. 重复修改：
  
-
+fdkjjjavamiarjvdfidfdfrkj
 
 [1]: https://github.com/vim-scripts/mru.vim  
 [2]: https://github.com/kien/ctrlp.vim 

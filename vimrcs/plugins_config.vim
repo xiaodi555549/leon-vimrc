@@ -233,8 +233,11 @@ map <leader>mw <Plug>(easymotion-bd-w)
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => YcmCompleteMe 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+let g:ycm_key_list_select_completion=['<c-n>','<Down>']
+let g:ycm_key_list_previous_completion=['<c-p>','<Up>']
 map <leader>jd :YcmCompleter GoToDefinition<cr>
 map <leader>jr :YcmCompleter GoToReferences<cr>
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -247,7 +250,7 @@ nnoremap <F3> :NumbersToggle<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ultisnips 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-let g:UltisnipsExpandTrigger="<F4>"
+let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-j>"
 let g:UltiSnipsJumpBackwardTrigger="<c-k>"
 " map <leader>uu :UltiSnips#ExpandSnippet()<cr>
@@ -265,6 +268,8 @@ let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
 " javascript checkers
-let g:syntastic_javascript_checkers = ['eslint'] 
+let g:syntastic_javascript_checkers = [''] 
 " json checkers
 let g:syntastic_json_checkers = ['jsonlint']
+" css checkers
+let g:syntastic_css_checkers = ['csslint']

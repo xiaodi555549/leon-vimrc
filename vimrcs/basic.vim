@@ -77,6 +77,17 @@ nmap <leader>nh :noh<cr>
 " Fast add a new line
 nmap oo o<esc>
 
+" delete line
+nmap - dd
+
+" move to firt character
+nnoremap H 0
+
+" move to last character
+nnoremap L $
+
+" back to normal mode
+" inoremap jk <esc>
 
 " :W sudo saves the file 
 " (useful for handling the permission-denied error)

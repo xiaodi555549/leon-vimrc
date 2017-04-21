@@ -26,10 +26,11 @@ Plugin 'myusuf3/numbers.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
+Plugin 'mhinz/vim-grepper'
 
 " code snippets 
-" Plugin 'SirVer/ultisnips'
-" Plugin 'honza/vim-snippets'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " color schemes
 Plugin 'flazz/vim-colorschemes'
