@@ -62,7 +62,7 @@ let g:user_zen_mode='a'
 " => Vim grep
 """"""""""""""""""""""""""""""
 let Grep_Skip_Dirs = 'RCS CVS SCCS .svn generated'
-set grepprg=/bin/grep\ -nH
+set grepprg=/usr/bin/grep\ -nH
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -246,6 +246,11 @@ map <leader>jr :YcmCompleter GoToReferences<cr>
 let g:numbers_exclude = ['nerdtree', 'bufexplorer', 'mru']
 nnoremap <F3> :NumbersToggle<cr>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Grepper 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nmap gs <plug>(GrepperOperator)
+xmap gs <plug>(GrepperOperator)
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => ultisnips 
