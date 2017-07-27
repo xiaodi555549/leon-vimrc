@@ -114,4 +114,3 @@
 [5]: https://github.com/jlanzarotta/bufexplorer
 [6]: https://github.com/scrooloose/nerdcommenter
 [7]: https://github.com/mattn/emmet-vim
-function 
